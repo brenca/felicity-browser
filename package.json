@@ -1,0 +1,49 @@
+{
+  "name": "felicity-browser",
+  "version": "2.4.9",
+  "description": "Javascript object instantiation from Joi schema for the browser",
+  "main": "./dist/felicity-browser.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "webpack"
+  },
+  "author": "Benedek Heilig",
+  "license": "BSD-3-Clause",
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      "transform-object-assign",
+      "transform-proto-to-assign",
+      [
+        "transform-es2015-classes",
+        {
+          "loose": true
+        }
+      ]
+    ],
+    "presets": [
+      "es2015"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/brenca/felicity-browser.git"
+  },
+  "bugs": {
+    "url": "http://github.com/brenca/felicity-browser/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-es2015-classes": "^6.14.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.2.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-plugin-transform-proto-to-assign": "^6.9.0",
+    "babel-preset-es2015": "^6.1.18",
+    "felicity": "^2.4.9",
+    "json-loader": "^0.5.4",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^2.7.0"
+  },
+  "dependencies": {}
+}
